@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+* {
+  font-family: "Open Sans";
+}
+body {
+  background-color: hsl(210, 36%, 96%);
+}
+.container {
+  display: flex;
+  max-width: 62%;
+  justify-content: center;
+  gap: 48px;
+  margin: 80px auto;
+}
+img {
+  max-width: 560px;
+  border-radius: 8px;
+}
+.deadline {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.deadline-format {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  color: #fff;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(209, 61%, 16%);
+}
+.title {
+  color: hsl(205, 72%, 37%);
+  line-height: 1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 26px;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+.giveaway {
+  font-size: 18px;
+  letter-spacing: 4px;
+  margin-bottom: 18px;
+  font-weight: bold;
+}
+.giveaway-info {
+  color: hsl(209, 23%, 60%);
+}
+.days,
+.hours,
+.minutes,
+.seconds {
+  margin: 0;
+  margin-top: 8px;
+  font-size: 26px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+span {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+@media (max-width: 1025px) {
+  img {
+    max-width: 100%;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+  .phone-info {
+    text-align: center;
+  }
+  .giveaway-info {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  .deadline {
+    justify-content: center;
+  }
+}
